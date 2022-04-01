@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "periods",
+  "info": {
+    "singularName": "period",
+    "pluralName": "periods",
+    "displayName": "period",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "acdamic_days": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::acdamic-day.acdamic-day",
+      "mappedBy": "period"
+    }
+  }
+}

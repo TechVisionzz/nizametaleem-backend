@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "student",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "fatherName": {
+      "type": "string"
+    },
+    "fatherCNIC": {
+      "type": "string"
+    },
+    "cast": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "post": {
+      "type": "string"
+    },
+    "policeStation": {
+      "type": "string"
+    },
+    "reilwayStation": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "pinCode": {
+      "type": "string"
+    },
+    "fatherContactNumber": {
+      "type": "string"
+    },
+    "alreadyReadBooks": {
+      "type": "string"
+    },
+    "admissionDate": {
+      "type": "string"
+    },
+    "previousSchoolDetail": {
+      "type": "string"
+    },
+    "leavingReason": {
+      "type": "string"
+    },
+    "resultIssueDate": {
+      "type": "string"
+    },
+    "resultCardNumber": {
+      "type": "string"
+    },
+    "waya": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "student_sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::student-section.student-section",
+      "mappedBy": "student"
+    },
+    "attendences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::attendence.attendence",
+      "mappedBy": "student"
+    },
+    "results": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::result.result",
+      "mappedBy": "student"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section",
+      "inversedBy": "students"
+    }
+  }
+}

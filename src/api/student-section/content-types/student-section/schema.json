@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_sections",
+  "info": {
+    "singularName": "student-section",
+    "pluralName": "student-sections",
+    "displayName": "studentSection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "string"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student",
+      "inversedBy": "student_sections"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section",
+      "inversedBy": "student_sections"
+    }
+  }
+}

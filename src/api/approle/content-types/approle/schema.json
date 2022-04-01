@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "approles",
+  "info": {
+    "singularName": "approle",
+    "pluralName": "approles",
+    "displayName": "approle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "approle"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu.menu",
+      "inversedBy": "approles"
+    }
+  }
+}

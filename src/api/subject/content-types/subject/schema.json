@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subjects",
+  "info": {
+    "singularName": "subject",
+    "pluralName": "subjects",
+    "displayName": "subject",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "classes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::class.class",
+      "inversedBy": "subjects"
+    },
+    "isSemester": {
+      "type": "boolean",
+      "default": true
+    },
+    "isAnnual": {
+      "type": "boolean",
+      "default": true
+    },
+    "totalMarks": {
+      "type": "integer"
+    },
+    "result": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::result.result",
+      "mappedBy": "subject"
+    }
+  }
+}

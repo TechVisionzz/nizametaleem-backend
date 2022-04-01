@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organizationsettings",
+  "info": {
+    "singularName": "organizationsetting",
+    "pluralName": "organizationsettings",
+    "displayName": "organizationsetting"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

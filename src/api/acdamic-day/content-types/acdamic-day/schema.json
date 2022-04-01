@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acdamic_days",
+  "info": {
+    "singularName": "acdamic-day",
+    "pluralName": "acdamic-days",
+    "displayName": "acdamicDay"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "string"
+    },
+    "month": {
+      "type": "string"
+    },
+    "totalLectures": {
+      "type": "integer"
+    },
+    "period": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::period.period",
+      "inversedBy": "acdamic_days"
+    }
+  }
+}

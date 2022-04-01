@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attendences",
+  "info": {
+    "singularName": "attendence",
+    "pluralName": "attendences",
+    "displayName": "attendence",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "period": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::period.period"
+    },
+    "status": {
+      "type": "string"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student",
+      "inversedBy": "attendences"
+    },
+    "date": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "month": {
+      "type": "string"
+    },
+    "day": {
+      "type": "string"
+    }
+  }
+}
