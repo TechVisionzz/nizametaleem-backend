@@ -30,13 +30,13 @@
       "type": "string"
     },
     "year": {
-      "type": "string"
+      "type": "integer"
     },
     "month": {
-      "type": "string"
+      "type": "integer"
     },
     "day": {
-      "type": "string"
+      "type": "integer"
     }
   }
 }
