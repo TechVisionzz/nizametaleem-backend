@@ -4,19 +4,14 @@
   "info": {
     "singularName": "acdamic-day",
     "pluralName": "acdamic-days",
-    "displayName": "acdamicDay"
+    "displayName": "acdamicDay",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "year": {
-      "type": "string"
-    },
-    "month": {
-      "type": "string"
-    },
     "totalLectures": {
       "type": "integer"
     },
@@ -25,6 +20,12 @@
       "relation": "manyToOne",
       "target": "api::period.period",
       "inversedBy": "acdamic_days"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "month": {
+      "type": "integer"
     }
   }
 }
