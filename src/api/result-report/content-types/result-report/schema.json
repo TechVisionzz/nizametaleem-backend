@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "result_reports",
+  "info": {
+    "singularName": "result-report",
+    "pluralName": "result-reports",
+    "displayName": "resultReport",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dummy": {
+      "type": "string"
+    }
+  }
+}

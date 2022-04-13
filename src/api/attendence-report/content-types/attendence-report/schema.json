@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attendence_reports",
+  "info": {
+    "singularName": "attendence-report",
+    "pluralName": "attendence-reports",
+    "displayName": "attendenceReport"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dummy": {
+      "type": "string"
+    }
+  }
+}
